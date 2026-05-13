@@ -1,0 +1,221 @@
+{
+  "model_name": "mfcc_1dcnn",
+  "feature_type": "mfcc",
+  "best_val_loss": 1.3141968726596873,
+  "best_val_acc": 0.5961123110151187,
+  "test_loss": 1.3360794956966113,
+  "test_acc": 0.524731182795699,
+  "avg_epoch_time_sec": 3.4141272727272725,
+  "total_params": 137930,
+  "trainable_params": 137930,
+  "class_names": [
+    "air_conditioner",
+    "car_horn",
+    "children_playing",
+    "dog_bark",
+    "drilling",
+    "engine_idling",
+    "gun_shot",
+    "jackhammer",
+    "siren",
+    "street_music"
+  ],
+  "classification_report": {
+    "air_conditioner": {
+      "precision": 0.42857142857142855,
+      "recall": 0.3,
+      "f1-score": 0.35294117647058826,
+      "support": 50.0
+    },
+    "car_horn": {
+      "precision": 0.717948717948718,
+      "recall": 0.8484848484848485,
+      "f1-score": 0.7777777777777778,
+      "support": 33.0
+    },
+    "children_playing": {
+      "precision": 0.64,
+      "recall": 0.32,
+      "f1-score": 0.4266666666666667,
+      "support": 50.0
+    },
+    "dog_bark": {
+      "precision": 0.7804878048780488,
+      "recall": 0.64,
+      "f1-score": 0.7032967032967034,
+      "support": 50.0
+    },
+    "drilling": {
+      "precision": 0.5172413793103449,
+      "recall": 0.3,
+      "f1-score": 0.379746835443038,
+      "support": 50.0
+    },
+    "engine_idling": {
+      "precision": 0.3017241379310345,
+      "recall": 0.7,
+      "f1-score": 0.42168674698795183,
+      "support": 50.0
+    },
+    "gun_shot": {
+      "precision": 0.7272727272727273,
+      "recall": 0.75,
+      "f1-score": 0.7384615384615385,
+      "support": 32.0
+    },
+    "jackhammer": {
+      "precision": 0.6153846153846154,
+      "recall": 0.32,
+      "f1-score": 0.42105263157894735,
+      "support": 50.0
+    },
+    "siren": {
+      "precision": 0.8947368421052632,
+      "recall": 0.34,
+      "f1-score": 0.4927536231884058,
+      "support": 50.0
+    },
+    "street_music": {
+      "precision": 0.45098039215686275,
+      "recall": 0.92,
+      "f1-score": 0.6052631578947368,
+      "support": 50.0
+    },
+    "accuracy": 0.524731182795699,
+    "macro avg": {
+      "precision": 0.6074348045559043,
+      "recall": 0.5438484848484848,
+      "f1-score": 0.5319646857766356,
+      "support": 465.0
+    },
+    "weighted avg": {
+      "precision": 0.5987556236170212,
+      "recall": 0.524731182795699,
+      "f1-score": 0.5149845440296512,
+      "support": 465.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      15,
+      0,
+      0,
+      0,
+      0,
+      33,
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      28,
+      0,
+      1,
+      0,
+      0,
+      3,
+      0,
+      0,
+      1
+    ],
+    [
+      3,
+      0,
+      16,
+      1,
+      0,
+      6,
+      0,
+      0,
+      1,
+      23
+    ],
+    [
+      0,
+      2,
+      1,
+      32,
+      1,
+      5,
+      3,
+      0,
+      1,
+      5
+    ],
+    [
+      2,
+      2,
+      0,
+      3,
+      15,
+      12,
+      1,
+      4,
+      0,
+      11
+    ],
+    [
+      10,
+      0,
+      0,
+      0,
+      2,
+      35,
+      0,
+      2,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0,
+      4,
+      3,
+      0,
+      24,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      1,
+      0,
+      0,
+      6,
+      22,
+      2,
+      16,
+      0,
+      1
+    ],
+    [
+      3,
+      3,
+      6,
+      0,
+      2,
+      3,
+      0,
+      3,
+      17,
+      13
+    ],
+    [
+      0,
+      2,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      46
+    ]
+  ],
+  "resolved_data_dir": "datasets\\UrbanSound8K"
+}

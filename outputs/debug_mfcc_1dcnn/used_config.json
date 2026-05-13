@@ -1,0 +1,67 @@
+{
+  "config": "configs/fast_debug.json",
+  "data_dir": "datasets/UrbanSound8K",
+  "project": "csc4005-lab3-urbansound-1dcnn",
+  "run_name": "debug_mfcc_1dcnn",
+  "model_name": "mfcc_1dcnn",
+  "feature_type": "mfcc",
+  "sample_rate": 16000,
+  "duration": 3.0,
+  "n_fft": 1024,
+  "hop_length": 512,
+  "n_mfcc": 32,
+  "n_mels": 64,
+  "hidden_channels": [
+    48,
+    96,
+    96
+  ],
+  "dropout": 0.3,
+  "optimizer": "adamw",
+  "scheduler": "plateau",
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "epochs": 3,
+  "batch_size": 24,
+  "patience": 2,
+  "seed": 42,
+  "train_folds": [
+    1,
+    2
+  ],
+  "val_folds": [
+    9
+  ],
+  "test_folds": [
+    10
+  ],
+  "max_train_per_class": 30,
+  "max_eval_per_class": 15,
+  "augment": true,
+  "cache_dir": ".cache/features",
+  "num_workers": 0,
+  "device": "auto",
+  "use_wandb": true,
+  "wandb_mode": "online",
+  "num_classes": 10,
+  "class_names": [
+    "air_conditioner",
+    "car_horn",
+    "children_playing",
+    "dog_bark",
+    "drilling",
+    "engine_idling",
+    "gun_shot",
+    "jackhammer",
+    "siren",
+    "street_music"
+  ],
+  "device_resolved": "cpu",
+  "resolved_data_dir": "datasets\\UrbanSound8K",
+  "input_channels": 32,
+  "train_size": 300,
+  "val_size": 150,
+  "test_size": 150,
+  "total_params": 78490,
+  "trainable_params": 78490
+}
